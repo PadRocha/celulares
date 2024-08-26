@@ -25,4 +25,14 @@
   	<filter-name>PageFilter</filter-name>
   	<url-pattern>/*</url-pattern>
   </filter-mapping>
+  <servlet>
+  	<description>Servlet de mantenimiento de la tabla Banco</description>
+  	<display-name>BancoUpdate</display-name>
+  	<servlet-name>BancoUpdate</servlet-name>
+  	<servlet-class>mx.uam.azc.los_estelares.celulares.controller.BancoUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BancoUpdate</servlet-name>
+  	<url-pattern>/BancoUpdate</url-pattern>
+  </servlet-mapping>
 </web-app>

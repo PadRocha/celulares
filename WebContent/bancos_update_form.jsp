@@ -8,7 +8,7 @@
 <meta name="GENERATOR"
     content="SeaMonkey/2.40 [en] (Windows; 10;
       Intel(R) Core(TM) i7-4500U CPU @ 1.80GHz 2.40 GHz) [Composer]">
-<meta name="Author" content="Hugo Pablo Leyva">
+<meta name="Author" content="Los Estelares">
 <title>Catálogo de Bancos</title>
 <link rel="stylesheet"
     href="${ pageContext.request.contextPath }/css/style.css">
@@ -21,8 +21,7 @@
 <sql:query var="resultados" dataSource="jdbc/TestDS"
         sql="SELECT * FROM banco;" />
     <c:forEach var="fila" items="${ resultados.rows }">
-        <form method="post"
-            action="${ pageContext.request.contextPath }/BancoUpdate">
+        <form method="post" action="${ pageContext.request.contextPath }/BancoUpdate">
             <table width="100%">
                 <tr class="form">
                     <td align="center">
